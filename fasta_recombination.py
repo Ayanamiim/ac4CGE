@@ -2,8 +2,8 @@ def complement_sequence(sequence):
     complement = {"A": "T", "T": "A", "C": "G", "G": "C"}
     return "".join(complement.get(base, base) for base in sequence)
 
-positive_file = r"datasets/pfur/pfur_pos_seq_test300.fasta"
-negative_file = r"datasets/pfur/pfur_pos_seq_minus_test300.fasta"
+positive_file = r"datasets/pfur/pfur_pos_seq_test10.fasta"
+negative_file = r"datasets/pfur/pfur_pos_seq_minus_test10.fasta"
 output_file = r"datasets/pfur/pfur_Test_P.fasta"
 
 def concatenate_fasta_files(positive_file, negative_file, output_file):
