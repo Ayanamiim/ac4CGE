@@ -10,7 +10,11 @@ $python main.py [-pos_fa pos_fa] [-neg_fa neg_fa] [-test_fa test_fa][-dataset da
 ```
 for instance:
 ```
-$ python main.py -pos_fa ./datasets/pfur/pfur_Train_P10.fasta -neg_fa ./datasets/pfur/pfur_Train_N10.fasta -test_fa ./datasets/pfur/pfur_Test10.fasta -dataset pfur -out ./results/pfur_results.csv
+$python main.py -pos_fa ./datasets/pfur/pfur_Train_P10.fasta -neg_fa ./datasets/pfur/pfur_Train_N10.fasta -test_fa ./datasets/pfur/pfur_Test10.fasta -dataset pfur -out ./results/pfur_results.csv
+```
+The dataset should firstly be merged into one by using:
+```
+$python fastamixed.py
 ```
 ## Packages
 The code is based on python 3.7 It depends on several python packages, such as numpy, scikit-learn, networkx, pandas, karateclub.
